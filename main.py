@@ -4,7 +4,6 @@
 # 3. add users or remove from the dict. storing dict in variable easiest?
 # 4. for k,v in pairs[]
 import password
-
 ### default dict user database
 users = {
 0:["FirstUser", "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08", "Patryk Zmyslony", True, 0],
@@ -22,17 +21,23 @@ f=open("logins.txt", "r")
 
 contente = f.read()
 newdict = eval(contente)
+
 #contente.users["0"][1]
 
 #print(newdict["0"][1])
-
-agentID = input("Please enter your agent ID:\n")
-
+def getinput():
+	get = True
+	while get:
+		try:
+			agentID = int(input("Please enter your agent ID:\n"))
+			return agentID
+		except ValueError:
+			print("Not a number!")
 
 #
 
-for k in newdict:
-	if agentID == k in newdict:
+def loggingin(agentID):
+	if agentID in newdict:
 		userNAME = input("Please enter your user name:\n")
 		if userNAME == newdict[agentID][0]:
 			pw = input("Please enter a password: ")
@@ -41,6 +46,10 @@ for k in newdict:
 				print(welcomessage+newdict[agentID][2])
 				print(areyouadmin+str(newdict[agentID][3]))
 			else:
-				print(f"{passworde}")
+				print(f"error")
 		else:
 			print("wrong username")
+
+		
+agentID = getinput()
+loggingin(agentID)

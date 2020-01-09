@@ -14,5 +14,5 @@ def printpassword(password):
 
 def hashpass(passworde):
 	passworde = hashlib.sha256((passworde).encode('utf-8')).hexdigest()
-	print(f"Your password is : {passworde}")
+	#print(f"Your password is : {passworde}")
 	return passworde

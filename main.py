@@ -18,9 +18,7 @@ areyouadmin = "Administrator: "
 def mainmenu():
 	if success[0] == True:
 		reusables.clearscreen()
-		print("IM IN")
-		print(welcomessage+success[1])
-		print(areyouadmin+success[2])
+		reusables.titleprint(agentname=success[1],admininfo=success[2])
 	else:
 		print("I failed the login")
 

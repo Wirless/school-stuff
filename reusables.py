@@ -8,7 +8,6 @@
 
 # -- IMPORTS --
 import os
-
 # -- GLOBALS/CONSTANTS --
 
 
@@ -22,3 +21,16 @@ def clearscreen():
   '''
   os.system('cls')
   os.system('clear')
+
+def titleprint(agentname,admininfo):
+  '''
+  print the title and Agent name + administrator privileges
+  '''
+  print("*"*50)
+  print("Agent: "+agentname)
+  print(" ")
+  print(" "*20+"UltraDecrypt0r")
+  print(" ")
+  print("\t\t\t\t\t\t\tAdministrator: "+admininfo)
+  print("*"*50)
+

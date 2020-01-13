@@ -34,3 +34,15 @@ def titleprint(agentname,admininfo):
   print("\t\t\t\t\t\t\tAdministrator: "+admininfo)
   print("*"*50)
 
+
+def menucontent():
+	print("Menu:")
+	print("[1] Encrypt morse code message.")
+	print("[2] Decrypt morsecode message")
+	print("[3] Logout")
+	while True:
+		try:
+			option = int(input(": "))
+			return option
+		except ValueError:
+			print("Not a number!")

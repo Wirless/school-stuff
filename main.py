@@ -25,3 +25,6 @@ def mainmenu():
 agentID = login.getinput()
 success = login.loggingin(agentID)	
 mainmenu()
+choosen = reusables.menucontent()
+print(choosen)
+#menu content here

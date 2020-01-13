@@ -1,6 +1,19 @@
+# ------------------------------------------------------------------
+# Name:        password.py
+# Purpose:     password module for encrypting passwords with sha256
+# Author:      PZmyslony
+# Created:     9/01/2020
+# Revision:    1.00
+# ------------------------------------------------------------------
+
+# -- IMPORTS --
 import hashlib
 
+# -- GLOBALS/CONSTANTS --
 password = ""
+
+# -- FUNCTIONS/CLASSES --
+
 
 def inputpass(password):
 	'''

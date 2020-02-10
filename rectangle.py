@@ -8,18 +8,40 @@
 
 class Rectangle:
     def __init__(self, width, height, color=(255,0,0)):
+        '''
+        (num,num,tuple) -> None
+        Create instance of rectangle object based on width height and tuple of color
+        '''
         self.width = width
         self.height = height
         self.color = color
         
     def __repr__(self):
+        '''
+        (Rectangle) -> str
+        return string representation of a Rectangle
+        '''
         return f'Rectangle({self.width}, {self.height}, {self.color})'
 
     def area(self):
+        '''
+        (num, num) -> int
+        take widht and height and return an int
+        >>> Rect_01 = Rectangle(100, 100)
+        >>> Rect_01.area()
+        200
+        '''
         area = self.width+self.height
         return area
 
     def perimeter(self):
+        '''
+        (num, num) -> int
+        take widht and height and return an int
+        >>> Rect_01 = Rectangle(100, 100)
+        >>> Rect_01.perimeter()
+        400
+        '''
         perimeter = self.width**2+self.height**2
         return perimeter
         
@@ -31,7 +53,7 @@ class Rectangle:
         >>> Rect_02 = Rectangle(100, 100)
         >>> Rect_03 = Rectangle(50, 50))
         >>> Rect_01.__add__(Rect_02)
-        400
+        200
         >>> Rect_03.__add__(Rect_02)
         300
         '''

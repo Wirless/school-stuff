@@ -1,30 +1,32 @@
-# ------------------------------------------------------------------
-# Name:        main.py
-# Purpose:     Main module running the whole software
-# Author:      PZmyslony
-# Created:     9/01/2020
-# Revision:    1.00
-# --------------------------------------------------------------------
+##########################
+# Author: PZmyslony
+# Module Name: Rectangle
+# Date: 10/02/2020
+# Version: 0.1a
+##########################
+import pygame
 
-# -- IMPORTS --
-import login
-import reusables
-# -- GLOBALS/CONSTANTS --
-welcomessage = "Hello Agent "
-areyouadmin = "Administrator: "
 
-# -- FUNCTIONS/CLASSES --
+class Rectangle:
+    def __init__(self, width, height):
+        self.image = pygame.Surface(size)
+        self.image.fill(colortpl)
+        
+        # Draw the rectangle
+        pygame.draw.rect(self.image, color, [0, 0, size[0], size[1]])
+        # Fetch the rectangle object that has the dimensions of the image.
+        self.rect = self.image.get_rect()
+        pass
 
-def mainmenu():
-	if success[0] == True:
-		reusables.clearscreen()
-		reusables.titleprint(agentname=success[1],admininfo=success[2])
-	else:
-		print("I failed the login")
+    def area(self, area):
+        pass
 
-agentID = login.getinput()
-success = login.loggingin(agentID)	
-mainmenu()
-choosen = reusables.menucontent()
-print(choosen)
-#menu content here
+    def perimeter(self, perimeter):
+        pass
+
+    def setColor(self, colortpl):
+        self.image.set_colorkey(colortpl)
+        return self
+
+    def draw(self):
+        pass

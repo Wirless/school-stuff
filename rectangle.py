@@ -4,7 +4,8 @@
 # Date: 10/02/2020
 # Version: 0.1a
 ##########################
-
+import math
+import doctest 
 
 class Rectangle:
     def __init__(self, width, height, color=(255,0,0)):
@@ -40,7 +41,7 @@ class Rectangle:
         take widht and height and return an int
         >>> Rect_01 = Rectangle(100, 100)
         >>> Rect_01.perimeter()
-        400
+        20000
         '''
         perimeter = self.width**2+self.height**2
         return perimeter
@@ -51,11 +52,11 @@ class Rectangle:
         adds two rectangles
         >>> Rect_01 = Rectangle(100, 100)
         >>> Rect_02 = Rectangle(100, 100)
-        >>> Rect_03 = Rectangle(50, 50))
-        >>> Rect_01.__add__(Rect_02)
-        200
-        >>> Rect_03.__add__(Rect_02)
-        300
+        >>> Rect_03 = Rectangle(50, 50)
+        >>> Rect_01+Rect_02
+        Rectangle(20.0, 20.0, (255, 0, 0))
+        >>> Rect_03+Rect_02
+        Rectangle(17.320508075688775, 17.320508075688775, (255, 0, 0))
         '''
         if isinstance(other, Rectangle):
             result = self.area() + other.area()
@@ -71,10 +72,10 @@ class Rectangle:
         >>> Rect_01 = Rectangle(100, 100)
         >>> Rect_02 = Rectangle(100, 100)
         >>> Rect_03 = Rectangle(50, 50)
-        >>> Rect_01.__sub__(Rect_02)
+        >>> Rect_01-Rect_02
         0
-        >>> Rect_03.__sub__(Rect_02)
-        100
+        >>> Rect_03-Rect_02
+        -100
         '''
         if isinstance(other, Rectangle):
             return self.area() - other.area()
@@ -109,10 +110,10 @@ class Rectangle:
         >>> Rect_01 = Rectangle(100, 100)
         >>> Rect_02 = Rectangle(100, 100)
         >>> Rect_03 = Rectangle(50, 50)
-        >>> Rect_01.__truediv__(Rect_02)
+        >>> Rect_01/Rect_02
         1.0
-        >>> Rect_03.__truediv__(Rect_02)
-        2.0
+        >>> Rect_03/Rect_02
+        0.5
         '''
         if isinstance(other, Rectangle):
             return self.area() / other.area()
@@ -144,7 +145,7 @@ class Rectangle:
         Compares two rectangles for inequality based on area
         >>> Rect_01 = Rectangle(100, 100)
         >>> Rect_02 = Rectangle(100, 100)
-        >>> Rect_03 = Rectangle(99, 90)
+        >>> Rect_03 = Rectangle(50, 90)
         >>> Rect_01 != Rect_02
         False
         >>> Rect_03 != Rect_02
@@ -216,11 +217,16 @@ class Rectangle:
         arcade.run()  # runs all above code until [x] clicked
         return None
         
-something = Rectangle(100, 100, (255,0,255))
-something2 = Rectangle(100, 100, (255, 0, 255))
+#something = Rectangle(100, 100, (255,0,255))
+#something2 = Rectangle(100, 100, (255, 0, 255))
 
-cr = something.__add__(something2)
-print(cr)
-
+#cr = something.__add__(something2)
+#print(cr)
+#Rect_01 = Rectangle(100, 200)
+#Rect_02 = Rectangle(200, 10)
+#Rect_03 = Rectangle(50, 50)
+#x = Rect_01.__sub__(Rect_02)
+#print(x)
+doctest.testmod()
 
 # Keep the window up until someone closes it.

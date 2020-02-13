@@ -1,0 +1,263 @@
+C:\Users\19PZmyslony.avtos\Desktop\ko>python test_rect.py
+                 TESTS FOR IMPERIAL CLASS
+
+---Instantiation and str tests---
+
+        All instantiations successful
+
+These are the units generated that will be used in all tests
+         Rectangle(100, 200, (255, 0, 0))
+         Rectangle(100, 200, (255, 0, 0))
+         Rectangle(200, 10, (255, 0, 0))
+         Rectangle(200, 10, (255, 0, 0))
+         Rectangle(10, 80, (255, 0, 0))
+         Rectangle(10, 80, (255, 0, 0))
+         Rectangle(80, 60.2, (255, 0, 0))
+         Rectangle(80, 60.2, (255, 0, 0))
+         Rectangle(60.2, 90.66, (255, 0, 0))
+         Rectangle(60.2, 90.66, (255, 0, 0))
+         Rectangle(90.66, 140.8, (255, 0, 0))
+         Rectangle(90.66, 140.8, (255, 0, 0))
+Note: All instantiations printed using __str__ method
+
+
+
+---Change Color tests---
+
+        Before:  Rectangle(100, 200, (255, 0, 0))
+        After:   Rectangle(100, 200, (222, 87, 8))
+        Before:  Rectangle(100, 200, (255, 0, 0))
+        After:   Rectangle(100, 200, (162, 80, 81))
+        Before:  Rectangle(200, 10, (255, 0, 0))
+        After:   Rectangle(200, 10, (112, 154, 220))
+        Before:  Rectangle(200, 10, (255, 0, 0))
+        After:   Rectangle(200, 10, (87, 35, 33))
+        Before:  Rectangle(10, 80, (255, 0, 0))
+        After:   Rectangle(10, 80, (159, 154, 200))
+        Before:  Rectangle(10, 80, (255, 0, 0))
+        After:   Rectangle(10, 80, (253, 142, 240))
+
+Note: All seems to have gone well changing colors- have they changed?
+Tests for changing color ran...
+
+
+
+
+---Area tests---
+
+         Rectangle(100, 200, (222, 87, 8)) has area of 300
+         Rectangle(100, 200, (162, 80, 81)) has area of 300
+         Rectangle(200, 10, (112, 154, 220)) has area of 210
+         Rectangle(200, 10, (87, 35, 33)) has area of 210
+         Rectangle(10, 80, (159, 154, 200)) has area of 90
+         Rectangle(10, 80, (253, 142, 240)) has area of 90
+         Rectangle(80, 60.2, (255, 0, 0)) has area of 140.2
+         Rectangle(80, 60.2, (255, 0, 0)) has area of 140.2
+         Rectangle(60.2, 90.66, (255, 0, 0)) has area of 150.86
+         Rectangle(60.2, 90.66, (255, 0, 0)) has area of 150.86
+         Rectangle(90.66, 140.8, (255, 0, 0)) has area of 231.46
+         Rectangle(90.66, 140.8, (255, 0, 0)) has area of 231.46
+Tests for areas ran...review values!
+
+
+
+
+---Perimeter tests---
+
+
+
+-----Testing overloaded add and sub operators-----
+
+Testing operator: +
+        Rectangle(100, 200, (222, 87, 8)) +
+        Rectangle(100, 200, (162, 80, 81)) =
+        Rectangle(24.49489742783178, 24.49489742783178, (255, 0, 0))
+        300 + 300 = 48.98979485566356
+
+        Rectangle(100, 200, (162, 80, 81)) +
+        Rectangle(200, 10, (112, 154, 220)) =
+        Rectangle(22.58317958127243, 22.58317958127243, (255, 0, 0))
+        300 + 210 = 45.16635916254486
+
+        Rectangle(200, 10, (112, 154, 220)) +
+        Rectangle(200, 10, (87, 35, 33)) =
+        Rectangle(20.493901531919196, 20.493901531919196, (255, 0, 0))
+        210 + 210 = 40.98780306383839
+
+        Rectangle(200, 10, (87, 35, 33)) +
+        Rectangle(10, 80, (159, 154, 200)) =
+        Rectangle(17.320508075688775, 17.320508075688775, (255, 0, 0))
+        210 + 90 = 34.64101615137755
+
+        Rectangle(10, 80, (159, 154, 200)) +
+        Rectangle(10, 80, (253, 142, 240)) =
+        Rectangle(13.416407864998739, 13.416407864998739, (255, 0, 0))
+        90 + 90 = 26.832815729997478
+
+        Rectangle(10, 80, (253, 142, 240)) +
+        Rectangle(80, 60.2, (255, 0, 0)) =
+        Rectangle(15.17234326002414, 15.17234326002414, (255, 0, 0))
+        90 + 140.2 = 30.34468652004828
+
+        Rectangle(80, 60.2, (255, 0, 0)) +
+        Rectangle(80, 60.2, (255, 0, 0)) =
+        Rectangle(16.745148551147583, 16.745148551147583, (255, 0, 0))
+        140.2 + 140.2 = 33.490297102295166
+
+        Rectangle(80, 60.2, (255, 0, 0)) +
+        Rectangle(60.2, 90.66, (255, 0, 0)) =
+        Rectangle(17.060480649735517, 17.060480649735517, (255, 0, 0))
+        140.2 + 150.86 = 34.120961299471034
+
+        Rectangle(60.2, 90.66, (255, 0, 0)) +
+        Rectangle(60.2, 90.66, (255, 0, 0)) =
+        Rectangle(17.370089234082823, 17.370089234082823, (255, 0, 0))
+        150.86 + 150.86 = 34.740178468165645
+
+        Rectangle(60.2, 90.66, (255, 0, 0)) +
+        Rectangle(90.66, 140.8, (255, 0, 0)) =
+        Rectangle(19.55300488416039, 19.55300488416039, (255, 0, 0))
+        150.86 + 231.46 = 39.10600976832078
+
+        Rectangle(90.66, 140.8, (255, 0, 0)) +
+        Rectangle(90.66, 140.8, (255, 0, 0)) =
+        Rectangle(21.51557575339317, 21.51557575339317, (255, 0, 0))
+        231.46 + 231.46 = 43.03115150678634
+
+
+Testing operator: -
+        Rectangle(100, 200, (222, 87, 8)) -
+        Rectangle(100, 200, (162, 80, 81)) =
+        0
+Failed with:  Rectangle(100, 200, (222, 87, 8)) <built-in function sub> Rectangle(100, 200, (162, 80, 81))
+        Rectangle(100, 200, (162, 80, 81)) -
+        Rectangle(200, 10, (112, 154, 220)) =
+        90
+Failed with:  Rectangle(100, 200, (162, 80, 81)) <built-in function sub> Rectangle(200, 10, (112, 154, 220))
+        Rectangle(200, 10, (112, 154, 220)) -
+        Rectangle(200, 10, (87, 35, 33)) =
+        0
+Failed with:  Rectangle(200, 10, (112, 154, 220)) <built-in function sub> Rectangle(200, 10, (87, 35, 33))
+        Rectangle(200, 10, (87, 35, 33)) -
+        Rectangle(10, 80, (159, 154, 200)) =
+        120
+Failed with:  Rectangle(200, 10, (87, 35, 33)) <built-in function sub> Rectangle(10, 80, (159, 154, 200))
+        Rectangle(10, 80, (159, 154, 200)) -
+        Rectangle(10, 80, (253, 142, 240)) =
+        0
+Failed with:  Rectangle(10, 80, (159, 154, 200)) <built-in function sub> Rectangle(10, 80, (253, 142, 240))
+        Rectangle(10, 80, (253, 142, 240)) -
+        Rectangle(80, 60.2, (255, 0, 0)) =
+        -50.19999999999999
+Failed with:  Rectangle(10, 80, (253, 142, 240)) <built-in function sub> Rectangle(80, 60.2, (255, 0, 0))
+        Rectangle(80, 60.2, (255, 0, 0)) -
+        Rectangle(80, 60.2, (255, 0, 0)) =
+        0.0
+Failed with:  Rectangle(80, 60.2, (255, 0, 0)) <built-in function sub> Rectangle(80, 60.2, (255, 0, 0))
+        Rectangle(80, 60.2, (255, 0, 0)) -
+        Rectangle(60.2, 90.66, (255, 0, 0)) =
+        -10.660000000000025
+Failed with:  Rectangle(80, 60.2, (255, 0, 0)) <built-in function sub> Rectangle(60.2, 90.66, (255, 0, 0))
+        Rectangle(60.2, 90.66, (255, 0, 0)) -
+        Rectangle(60.2, 90.66, (255, 0, 0)) =
+        0.0
+Failed with:  Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function sub> Rectangle(60.2, 90.66, (255, 0, 0))
+        Rectangle(60.2, 90.66, (255, 0, 0)) -
+        Rectangle(90.66, 140.8, (255, 0, 0)) =
+        -80.6
+Failed with:  Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function sub> Rectangle(90.66, 140.8, (255, 0, 0))
+        Rectangle(90.66, 140.8, (255, 0, 0)) -
+        Rectangle(90.66, 140.8, (255, 0, 0)) =
+        0.0
+Failed with:  Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function sub> Rectangle(90.66, 140.8, (255, 0, 0))
+All Add/Sub tests have executed
+Tests for Plus/Minus ran...review values!
+
+
+
+
+-----Testing overloaded mul and div operators-----
+
+Testing operator: *
+        Failed with: Rectangle(100, 200, (222, 87, 8)) <built-in function mul> 2
+        Failed with: Rectangle(100, 200, (162, 80, 81)) <built-in function mul> 2
+        Failed with: Rectangle(200, 10, (112, 154, 220)) <built-in function mul> 2
+        Failed with: Rectangle(200, 10, (87, 35, 33)) <built-in function mul> 2
+        Failed with: Rectangle(10, 80, (159, 154, 200)) <built-in function mul> 2
+        Failed with: Rectangle(10, 80, (253, 142, 240)) <built-in function mul> 2
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function mul> 2
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function mul> 2
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function mul> 2
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function mul> 2
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function mul> 2
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function mul> 2
+        Failed with: Rectangle(100, 200, (222, 87, 8)) <built-in function mul> 10
+        Failed with: Rectangle(100, 200, (162, 80, 81)) <built-in function mul> 10
+        Failed with: Rectangle(200, 10, (112, 154, 220)) <built-in function mul> 10
+        Failed with: Rectangle(200, 10, (87, 35, 33)) <built-in function mul> 10
+        Failed with: Rectangle(10, 80, (159, 154, 200)) <built-in function mul> 10
+        Failed with: Rectangle(10, 80, (253, 142, 240)) <built-in function mul> 10
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function mul> 10
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function mul> 10
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function mul> 10
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function mul> 10
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function mul> 10
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function mul> 10
+        Failed with: Rectangle(100, 200, (222, 87, 8)) <built-in function mul> 3.33
+        Failed with: Rectangle(100, 200, (162, 80, 81)) <built-in function mul> 3.33
+        Failed with: Rectangle(200, 10, (112, 154, 220)) <built-in function mul> 3.33
+        Failed with: Rectangle(200, 10, (87, 35, 33)) <built-in function mul> 3.33
+        Failed with: Rectangle(10, 80, (159, 154, 200)) <built-in function mul> 3.33
+        Failed with: Rectangle(10, 80, (253, 142, 240)) <built-in function mul> 3.33
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function mul> 3.33
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function mul> 3.33
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function mul> 3.33
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function mul> 3.33
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function mul> 3.33
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function mul> 3.33
+
+Testing operator: /
+        Failed with: Rectangle(100, 200, (222, 87, 8)) <built-in function truediv> 2
+        Failed with: Rectangle(100, 200, (162, 80, 81)) <built-in function truediv> 2
+        Failed with: Rectangle(200, 10, (112, 154, 220)) <built-in function truediv> 2
+        Failed with: Rectangle(200, 10, (87, 35, 33)) <built-in function truediv> 2
+        Failed with: Rectangle(10, 80, (159, 154, 200)) <built-in function truediv> 2
+        Failed with: Rectangle(10, 80, (253, 142, 240)) <built-in function truediv> 2
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function truediv> 2
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function truediv> 2
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function truediv> 2
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function truediv> 2
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function truediv> 2
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function truediv> 2
+        Failed with: Rectangle(100, 200, (222, 87, 8)) <built-in function truediv> 10
+        Failed with: Rectangle(100, 200, (162, 80, 81)) <built-in function truediv> 10
+        Failed with: Rectangle(200, 10, (112, 154, 220)) <built-in function truediv> 10
+        Failed with: Rectangle(200, 10, (87, 35, 33)) <built-in function truediv> 10
+        Failed with: Rectangle(10, 80, (159, 154, 200)) <built-in function truediv> 10
+        Failed with: Rectangle(10, 80, (253, 142, 240)) <built-in function truediv> 10
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function truediv> 10
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function truediv> 10
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function truediv> 10
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function truediv> 10
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function truediv> 10
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function truediv> 10
+        Failed with: Rectangle(100, 200, (222, 87, 8)) <built-in function truediv> 3.33
+        Failed with: Rectangle(100, 200, (162, 80, 81)) <built-in function truediv> 3.33
+        Failed with: Rectangle(200, 10, (112, 154, 220)) <built-in function truediv> 3.33
+        Failed with: Rectangle(200, 10, (87, 35, 33)) <built-in function truediv> 3.33
+        Failed with: Rectangle(10, 80, (159, 154, 200)) <built-in function truediv> 3.33
+        Failed with: Rectangle(10, 80, (253, 142, 240)) <built-in function truediv> 3.33
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function truediv> 3.33
+        Failed with: Rectangle(80, 60.2, (255, 0, 0)) <built-in function truediv> 3.33
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function truediv> 3.33
+        Failed with: Rectangle(60.2, 90.66, (255, 0, 0)) <built-in function truediv> 3.33
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function truediv> 3.33
+        Failed with: Rectangle(90.66, 140.8, (255, 0, 0)) <built-in function truediv> 3.33
+All Mul/Div tests have executed
+Tests for Mul/Div ran...review values!
+
+
+Logical tests could not be completed
+Draw tests could not be completed
+
+
